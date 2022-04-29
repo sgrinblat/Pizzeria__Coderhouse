@@ -1,5 +1,5 @@
 # Pizzeria - Coderhouse
-He creado esta web para el proyecto final del curso de Diseño Web de Coderhouse. La misma está creada principalmente con HTML, CSS y algunos componentes de Bootstrap, además de tener algunos scripts de JavaScript.
+He creado esta web para el proyecto final del curso de Diseño Web de Coderhouse. La misma está creada principalmente con HTML, SASS y algunos componentes de Bootstrap, además de tener algunos scripts de JavaScript.
 
 ## Índice
 
@@ -27,6 +27,7 @@ He creado esta web para el proyecto final del curso de Diseño Web de Coderhouse
 - JavaScript
 - CSS
 - Bootstrap
+- SASS
 
 ## Autor
 

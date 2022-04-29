@@ -1,0 +1,36 @@
+$primary-color: #ED213A;
+$secundary-color: #f8c538;
+$whatsapp-color: #00bb2d;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+$media_queries : (
+    'mobile': "only screen and (max-width: 768px)",
+    'tablet': "only screen and (min-width: 768px) and (max-width: 1199px)",
+    'small-desktop': "only screen and (min-width: 1200px) and (max-width: 1500px)",
+    'special-size': "only screen and (max-width: 1650px)",
+    'special-size-none': "only screen and (min-width: 1200px)",
+    'desktop': "only screen and (min-width: 1500px)",
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions : ();
+    @each $breakpoint in $breakpoints {
+        // If the key exists in the map
+        $conditions: append(
+            $conditions,
+            #{inspect(map-get($media_queries, $breakpoint))},
+            comma
+        );
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+
+}
