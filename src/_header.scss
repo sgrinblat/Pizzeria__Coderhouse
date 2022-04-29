@@ -1,0 +1,24 @@
+header {
+    background: $primary-color;
+    background: -webkit-linear-gradient(to right, #93291E, $primary-color);
+    background: linear-gradient(to right, #93291E, $primary-color);
+    box-shadow: 1px 4px 25px -5px rgba(38, 38, 38, 0.75);
+    -webkit-box-shadow: 1px 4px 25px -5px rgba(38, 38, 38, 0.75);
+    -moz-box-shadow: 1px 4px 25px -5px rgba(38, 38, 38, 0.75);
+    z-index: 30;
+    font-size: 18px;
+    .navbar-nav{
+        text-align: center;
+    }
+    .logo-almacen {
+        max-height: 120px;
+
+        &:hover {
+            filter: hue-rotate(60deg) brightness(500%);
+        }
+    }
+    .nav-item a:hover {
+        color: $secundary-color !important;
+        font-weight: bolder;
+    }
+}

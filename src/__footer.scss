@@ -1,0 +1,19 @@
+footer {
+    .footer__boton {
+        background: $primary-color;
+        background: -webkit-linear-gradient(to right, #93291E, $primary-color);
+        background: linear-gradient(to right, #93291E, $primary-color);
+
+        &:hover {
+            color: $secundary-color;
+        }
+    }
+
+    .footer__link {
+        color: $secundary-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
