@@ -1,9 +1,9 @@
 function mostrarPizzas() {
-    elementoUno = document.getElementById("pizzas1");
-    elementoDos = document.getElementById("pizzas2");
-    elementoTres = document.getElementById("pizzas3");
-    elementoCuatro = document.getElementById("pizzas4");
-    check = document.getElementById("Pizzas");
+    let elementoUno = document.getElementById("pizzas1");
+    let elementoDos = document.getElementById("pizzas2");
+    let elementoTres = document.getElementById("pizzas3");
+    let elementoCuatro = document.getElementById("pizzas4");
+    let check = document.getElementById("Pizzas");
     if (check.checked) {
         elementoUno.style.display='block';
         elementoDos.style.display='block';
