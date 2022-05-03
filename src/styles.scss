@@ -106,8 +106,10 @@
                     background-color: #fff;
                     border-left: 2px solid $primary-color;
                     animation: typing 3s steps(10) infinite;
+                    transition: .8s ease all;
                     body.dark & {
                         background-color: $dark-color;
+                        transition: .8s ease all;
                     }
                 }
                 

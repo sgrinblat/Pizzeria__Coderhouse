@@ -4,6 +4,17 @@
   max-width: 100%;
 }
 
+.div__boton-oscuro {
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 768px), only screen and (min-width: 768px) and (max-width: 1199px) {
+  .div__boton-oscuro {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
 .switch {
   background-color: #343D5B;
   border-radius: 1000px;
@@ -259,10 +270,14 @@ body.dark .wrapper .dynamic-txts li {
   border-left: 2px solid #ED213A;
   -webkit-animation: typing 3s steps(10) infinite;
           animation: typing 3s steps(10) infinite;
+  -webkit-transition: .8s ease all;
+  transition: .8s ease all;
 }
 
 body.dark .wrapper .dynamic-txts li span::after {
   background-color: #232526;
+  -webkit-transition: .8s ease all;
+  transition: .8s ease all;
 }
 
 @-webkit-keyframes slide {
