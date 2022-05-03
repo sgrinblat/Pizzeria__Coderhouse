@@ -1,8 +1,8 @@
 *::-webkit-scrollbar {
     width: 15px;
-    background: #efefef;
+    background-color: #efefef;
     &-thumb{
-        background: rgb(248, 197, 56);
+        background: $secundary-color;
         border-radius: 5px;
         &:hover {
             background: rgb(211, 164, 33);

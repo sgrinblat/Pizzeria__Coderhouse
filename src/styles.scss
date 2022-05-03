@@ -3,6 +3,14 @@
 @import "_header";
 @import "_footer";
 
+.fondo-web{
+    background-color: #fff;
+    transition: .8s ease all;
+    body.dark & {
+        background-color: $dark-color;
+    }
+}
+
 #imagenPrincipalHomepage {
     background-image: linear-gradient(rgba(39, 39, 39, 0.8), rgba(21, 21, 21, 0.6)), url("https://api.waitry.net/1/uploads/places/banner_pictures/wa_211_bannerPic_3543.jpg");
     @include for_breakpoint(mobile) {
@@ -57,7 +65,7 @@
         justify-content: center;
         text-align: center;
     }
-
+    
     .static-txt {
         color: $primary-color;
         font-size: 60px;
@@ -80,6 +88,9 @@
             position: relative;
             top: 0;
             animation: slide 12s steps(4) infinite;
+            body.dark & {
+                color: #fff;
+            }
 
             span {
                 position: relative;
@@ -92,10 +103,14 @@
                     left: 0;
                     height: 100%;
                     width: 100%;
-                    background: #fff;
+                    background-color: #fff;
                     border-left: 2px solid $primary-color;
                     animation: typing 3s steps(10) infinite;
+                    body.dark & {
+                        background-color: $dark-color;
+                    }
                 }
+                
             }
         }
     }
@@ -121,11 +136,19 @@
 
 .section__cards {
     padding: 30px 0 150px 30px;
-
+    
     .section__cards-contenido {
         box-shadow: 1px 5px 15px -4px rgba(0, 0, 0, 0.45);
         -webkit-box-shadow: 1px 5px 15px -4px rgba(0, 0, 0, 0.45);
         -moz-box-shadow: 1px 5px 15px -4px rgba(0, 0, 0, 0.45);
+
+        .card{
+            transition: .8s ease all;
+            body.dark & {
+                background-color: $darklight-color;
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -137,8 +160,8 @@
     grid-auto-flow: row;
     grid-template-areas: "section__sobre-nosotros-historia section__sobre-nosotros-antonio";
     background: $primary-color;
-    background: -webkit-linear-gradient(to right, #93291E, $primary-color);
-    background: linear-gradient(to right, #93291E, $primary-color);
+    background: -webkit-linear-gradient(to right, $terciary-color, $primary-color);
+    background: linear-gradient(to right, $terciary-color, $primary-color);
     height: 700px;
     width: 100%;
     @include for_breakpoint(mobile tablet small-desktop) {
@@ -211,6 +234,7 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: ". div__valor-diferencial-ventajas .";
+
     @include for_breakpoint(mobile tablet) {
         display: block;
     }
@@ -237,8 +261,8 @@
 
         .div__valor-diferencial__ventajas-review {
             background: $primary-color;
-            background: -webkit-linear-gradient(to right, #93291E, $primary-color);
-            background: linear-gradient(to right, #93291E, $primary-color);
+            background: -webkit-linear-gradient(to right, $terciary-color, $primary-color);
+            background: linear-gradient(to right, $terciary-color, $primary-color);
             grid-area: primera_review;
             justify-self: center;
             border-radius: 1.5%;
@@ -286,20 +310,39 @@
     }
 }
 
+#busquedas-activas{
+    body.dark & {
+        color: #fff;
+    }
+}
+
 .acordeon__ofertas-laborales {
     max-width: 60%;
     height: auto;
     padding-top: 55px;
     font-size: 20px;
     z-index: 1;
+    
 
     .acordeon__titulo-laboral {
         font-size: 25px;
+        transition: .8s ease all;
+        body.dark & {
+            transition: .8s ease all;
+            background-color: $darklight-color;
+            color: #fff;
+        }
     }
 
     .accordion-body {
         p {
+            transition: .8s ease all;
             margin: 5px auto;
+        }
+        body.dark & {
+            transition: .8s ease all;
+            background-color: $darklight-color;
+            color: #fff;
         }
 
         .acordeon__subtitulo-laboral {
@@ -312,6 +355,9 @@
 .div__separacion-titulos {
     text-align: center;
     padding: 280px 0 180px 0;
+    body.dark & {
+        color: #fff;
+    }
 }
 
 .div__formulario {
@@ -330,6 +376,13 @@
 
 #imagenPrincipalSucursales {
     background-image: linear-gradient(rgba(39, 39, 39, 0.8), rgba(21, 21, 21, 0.6)), url("https://www.alfaforni.com/wp-content/uploads/2018/08/pizza-come-in-pizzeria.jpg");
+}
+
+#sucursales-carrusel{
+    text-transform: uppercase;
+        body.dark & {
+            color: #fff;
+        }
 }
 
 .div__carrusel-mobile {
@@ -357,6 +410,9 @@
             font-size: 30px;
             text-align: center;
             text-shadow: none;
+            body.dark & {
+                color: #fff;
+            }
         }
     }
 }
@@ -391,8 +447,8 @@
     color: #fff;
     padding: 50px 0 50px 50px;
     background: $primary-color;
-    background: -webkit-linear-gradient(to right, #93291E, $primary-color);
-    background: linear-gradient(to right, #93291E, $primary-color);
+    background: -webkit-linear-gradient(to right, $terciary-color, $primary-color);
+    background: linear-gradient(to right, $terciary-color, $primary-color);
     width: 100%;
     @include for_breakpoint(mobile tablet) {
         text-align: center;
@@ -472,16 +528,16 @@
 .div__sidebar {
     min-height: 100vh;
     max-width: 12%;
-    background: #232526;
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526);
+    background: $dark-color;
+    background: -webkit-linear-gradient(to right, #414345, $dark-color);
+    background: linear-gradient(to right, #414345, $dark-color);
     box-shadow: 5px 0px 8px -3px rgba(0, 0, 0, 0.86);
     -webkit-box-shadow: 5px 0px 8px -3px rgba(0, 0, 0, 0.86);
     -moz-box-shadow: 5px 0px 8px -3px rgba(0, 0, 0, 0.86);
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
-    z-index: 2;
+    z-index: 50;
 
     .div__sidebar__menu__volver {
         color: #fff;
@@ -527,29 +583,37 @@
     }
 }
 
+.modo-oscuro{
+    justify-content: center;
+    display: flex;
+}
+
 .div__seccion__nav-productos {
     overflow-y: auto;
-    height: 15vh;
+    background-color: rgb(239, 240, 251);
+    height: 20vh;
     padding-bottom: 5rem;
+    transition: .8s ease all;
+    position: fixed;
+    z-index: 10;
+    body.dark & {
+        color: #fff;
+        background-color: $darklight-color;
+        transition: .8s ease all;
+    }
     @include for_breakpoint(mobile) {
-        height: 30vh;
+        height: 35vh;
     }
     @include for_breakpoint(tablet) {
-        height: 18vh;
+        height: 29vh;
     }
     
     .seccion__nav-productos {
         position: fixed;
         z-index: 1;
         width: 100%;
-        height: 150px;
-        @include for_breakpoint(mobile) {
-            height: 33vh;
-        }
-        @include for_breakpoint(tablet) {
-            height: 25vh;
-        }
-        
+        height: 20vh;
+
         .columnas__mobile{
             text-align: center;
         }
@@ -558,7 +622,11 @@
             padding-bottom: 10px;
         }
         .seccion__nav-productos__boton-carrito, .seccion__nav-productos__boton-volver {
-            width: 80%;
+            width: 90%;
+            max-height: 110px;
+            @include for_breakpoint(tablet) {
+                max-height: 130px;
+            }
         }
         .seccion__nav-productos__div-volver{
             @include for_breakpoint(special-size-none) {
@@ -568,13 +636,24 @@
     }
 }
 
+.contenedor-tarjetas{
+    transition: .8s ease all;
+    body.dark & {
+        transition: .8s ease all;
+        background-color: $dark-color;
+    }
+}
+
 .div__tarjetas-productos {
+    padding-top: 20vh;
+    
     @include for_breakpoint(mobile) {
         text-align: center;
         padding-left: 10vh;
+        padding-top: 38vh;
     }
     @include for_breakpoint(tablet) {
-        padding-top: 8vh;
+        padding-top: 30vh;
         text-align: center;
         padding-left: 1vh;
     }
@@ -585,6 +664,11 @@
         box-shadow: 3px 4px 16px -4px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 3px 4px 16px -4px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 3px 4px 16px -4px rgba(0, 0, 0, 0.75);
+        body.dark & {
+            color: #fff;
+            transition: .8s ease all;
+            background-color: $darklight-color;
+        }
         
         .div__tarjetas-productos__card-imagen {
             width: 300px;
