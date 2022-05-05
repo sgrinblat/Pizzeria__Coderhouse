@@ -18,7 +18,7 @@ He creado esta web para el proyecto final del curso de Diseño Web de Coderhouse
 
 ### Links
 
-- [URL del Sitio Web](https://sgrinblat.github.io/Pizzeria__Coderhouse/public/pages/index.html)
+- [URL del Sitio Web](https://sgrinblat.github.io/Pizzeria__Coderhouse)
 
 ## Mi proceso
 
