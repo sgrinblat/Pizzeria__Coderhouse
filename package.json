@@ -1,0 +1,28 @@
+{
+  "name": "pizzeria",
+  "version": "2.1.0",
+  "description": "Sitio web de la pizzeria Almacen",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgrinblat/Pizzeria__Coderhouse.git"
+  },
+  "keywords": [
+    "pizzeria",
+    "coderhouse"
+  ],
+  "author": "Santiago Grinblat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgrinblat/Pizzeria__Coderhouse/issues"
+  },
+  "homepage": "https://github.com/sgrinblat/Pizzeria__Coderhouse#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
