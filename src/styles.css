@@ -912,6 +912,7 @@ body.dark .div__seccion__nav-productos {
 .contenedor-tarjetas {
   -webkit-transition: .8s ease all;
   transition: .8s ease all;
+  padding-bottom: 5vh;
 }
 
 body.dark .contenedor-tarjetas {

@@ -640,6 +640,7 @@
 
 .contenedor-tarjetas{
     transition: .8s ease all;
+    padding-bottom: 5vh;
     body.dark & {
         transition: .8s ease all;
         background-color: $dark-color;
